@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hellorails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      THIS IS MY NAVBAR
+      <%= link_to "About Us", about_path %>
+
+      <a href="<%= profile_path %>"> Profile </a>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

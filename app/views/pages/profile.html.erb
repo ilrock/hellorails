@@ -1,0 +1,11 @@
+<h1> MY PROFILE </h1>
+
+My name is <%= @name %>
+I'm <%= @age %> years old
+And I'm <%= @height %> tall
+
+<ul>
+<% @interests.each do |interest| %>
+  <li><%= interest %></li>
+<% end %>
+</ul>
